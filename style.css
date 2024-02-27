@@ -1,0 +1,109 @@
+:root{
+    --main_color: #cecece;
+    --second_color: #dbdbdb;
+    --font_color: #000;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font_color);
+    transition: 0.5s cubic-bezier(.76,.01,.64,.97);
+}
+
+html{
+    font-size: 10px;
+    font-family: "Anta", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 15vh;
+    max-width: 100%;
+    position: relative;
+    background-color: var(--main_color);
+}
+
+#logo_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#burger_button{
+    height: 20px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.burger_line{
+    height: 3px;
+    width: 100%;
+    background-color: var(--font_color);
+    border-radius: 25px;
+}
+
+nav{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    background-color: var(--second_color);
+    overflow: hidden;
+}
+
+.nav_hidden{
+    height: 0;
+}
+
+.nav_visible{
+    height: 60vh;
+}
+
+#menu_text{
+    height: 25%;
+    width: 100%;
+    font-size: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inner_nav{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#menu_positions{
+    height: 75%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+main{
+    height: 85vh;
+    max-width: 100%;
+    background-image: url(GruzGarage_main_background.jpg);
+    background-position: center;
+    background-size: cover;
+}
